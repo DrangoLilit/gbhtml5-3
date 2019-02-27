@@ -1,12 +1,141 @@
-body{
+@font-face {
+    // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+    font-family: "Myriad Pro";
+    // адрес шрифта и тип 
+    src: url("fonts/Myriad-Pro.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+    font-family: "Gotham";
+    // адрес шрифта и тип 
+    src: url("fonts/GothaProReg.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+    font-family: "Gotham";
+    // адрес шрифта и тип 
+    src: url("fonts/GothaProBla.otf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+body {
     height: 100%;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
 header {
     height: 100vh;
+    background: url(img/Layer_96.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Myriad Pro";
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 30spx;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+    min-height: 100px;
+
+    &-navigation {
+        display: flex;
+    }
+
+    &-ul {
+        display: flex;
+    }
+
+    &-a {
+        color: #ffffff;
+        padding: 40px 20px;
+        display: block;
+
+        &-active {
+            border-bottom: 6px solid #11749e;
+        }
+    }
+}
+
+.social {
+    &-a {
+        color: #fff;
+        padding: 40px 10px;
+        display: inline-block;
+
+
+    }
+}
+
+.header {
+    &-text {
+        font-family: Gotham;
+        text-align: center;
+
+        &-h1 {
+            color: #f5f5f5;
+            font-size: 153px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: -1.92px;
+        }
+
+        &-p {
+            color: #11749e;
+            font-size: 25px;
+            font-weight: 500;
+            line-height: 51.19px;
+            text-transform: uppercase;
+            letter-spacing: 21px;
+        }
+    }
+
+    &-down {
+        color: #ffffff;
+        font-family: 'Open Sans', arial;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22px;
+        margin: 0 auto;
+
+        &-btn {
+            border: 1px solid #ffffff;
+            border-radius: 50%;
+            width: 65px;
+            height: 65px;
+            font-size: 40px;
+            line-height: 65px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+footer {
+    background-color: #222222;
+    height: 120px;
 }
