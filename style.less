@@ -13,7 +13,7 @@
     // адрес шрифта и тип 
     src: url("fonts/GothaProReg.otf") format("truetype");
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
 }
 
 @font-face {
@@ -24,6 +24,16 @@
     font-style: normal;
     font-weight: bold;
 }
+
+@font-face {
+    // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+    font-family: "Gotham";
+    // адрес шрифта и тип 
+    src: url("fonts/GothaProLig.otf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
 
 @padding-container: 160px;
 
@@ -176,11 +186,81 @@ header {
     }
 }
 
+.about {
+    background-color: #11749e;
+
+    &-title {
+        padding-top: 110px;
+    }
+
+    &-h2 {
+        background: url(img/W.png) no-repeat center;
+        text-align: center;
+    }
+
+    &-content {
+        padding-top: 68px;
+        padding-bottom: 130px;
+
+        display: flex;
+        justify-content: space-between;
+
+        &-item {
+            max-width: 258px;
+            margin-right: 40px;
+        }
+
+
+        &-item:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &-pic {
+        width: 133px;
+        height: 133px;
+        border-radius: 50%;
+        background-color: #2e85aa;
+        margin: 0 auto;
+        /*background: url(img/write.png) no-repeat center #2e85aa;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-h3 {
+        color: #ffffff;
+        font-size: 18px;
+        line-height: 36px;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding-top: 23px;
+        padding-bottom: 34px;
+    }
+
+    &-text {
+        text-align: center;
+    }
+
+    &-p {
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
+
+.container {
+    padding: 0 @padding-container;
+    max-width: 1600px;
+}
+
 .feedback {
 
-    background: url(img/Layer_97.jpg);
+    background: url(img/Layer_97.jpg) no-repeat;
+    background-size: cover;
 
-    &-header {
+    &-title {
         padding-top: 110px;
     }
 
@@ -191,7 +271,6 @@ header {
     }
 
     &-form {
-        padding: 0 @padding-container;
         margin-top: 70px;
         display: flex;
         flex-wrap: wrap;

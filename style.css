@@ -9,13 +9,19 @@
   font-family: "Gotham";
   src: url("fonts/GothaProReg.otf") format("truetype");
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
 }
 @font-face {
   font-family: "Gotham";
   src: url("fonts/GothaProBla.otf") format("truetype");
   font-style: normal;
   font-weight: bold;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("fonts/GothaProLig.otf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
 }
 body {
   height: 100%;
@@ -138,10 +144,67 @@ header {
   text-align: center;
   margin-bottom: 40px;
 }
-.feedback {
-  background: url(img/Layer_97.jpg);
+.about {
+  background-color: #11749e;
 }
-.feedback-header {
+.about-title {
+  padding-top: 110px;
+}
+.about-h2 {
+  background: url(img/W.png) no-repeat center;
+  text-align: center;
+}
+.about-content {
+  padding-top: 68px;
+  padding-bottom: 130px;
+  display: flex;
+  justify-content: space-between;
+}
+.about-content-item {
+  max-width: 258px;
+  margin-right: 40px;
+}
+.about-content-item:last-child {
+  margin-right: 0;
+}
+.about-pic {
+  width: 133px;
+  height: 133px;
+  border-radius: 50%;
+  background-color: #2e85aa;
+  margin: 0 auto;
+  /*background: url(img/write.png) no-repeat center #2e85aa;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-h3 {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-top: 23px;
+  padding-bottom: 34px;
+}
+.about-text {
+  text-align: center;
+}
+.about-p {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.container {
+  padding: 0 160px;
+  max-width: 1600px;
+}
+.feedback {
+  background: url(img/Layer_97.jpg) no-repeat;
+  background-size: cover;
+}
+.feedback-title {
   padding-top: 110px;
 }
 .feedback-h2 {
@@ -150,7 +213,6 @@ header {
   text-align: center;
 }
 .feedback-form {
-  padding: 0 160px;
   margin-top: 70px;
   display: flex;
   flex-wrap: wrap;
