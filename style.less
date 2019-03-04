@@ -36,6 +36,7 @@
 
 
 @padding-container: 160px;
+@color-blue: #11749e;
 
 body {
     height: 100%;
@@ -52,7 +53,6 @@ a {
 }
 
 h2 {
-    color: #ffffff;
     font-size: 37px;
     font-weight: 500;
     line-height: 24px;
@@ -64,12 +64,25 @@ li {
     list-style: none;
 }
 
+.font-dark {
+    color: #222222;
+}
+
+.font-light {
+    color: #ffffff;
+}
+
 header {
     /**/
     /* background: url(img/Layer_96.jpg);*/
     height: 100vh;
     min-height: 450px;
 
+}
+
+.container {
+    padding: 0 @padding-container;
+    max-width: 1600px;
 }
 
 .menu {
@@ -250,9 +263,146 @@ header {
     }
 }
 
-.container {
-    padding: 0 @padding-container;
-    max-width: 1600px;
+
+.bl-art {
+    &-line {
+        display: flex;
+
+        &-block {
+            width: 50%;
+            box-sizing: border-box;
+            padding-top: 82px;
+            padding-bottom: 114px;
+            padding-right: 80px;
+
+            &-fst {
+                padding-left: @padding-container;
+                background-color: #222222;
+            }
+
+            &-last {
+                padding-right: @padding-container;
+                padding-left: 80px;
+                background-color: #f3f3f3;
+            }
+
+            &-img {
+                background: url(img/Layer_88.jpg);
+                min-height: 100%;
+                background-size: cover;
+
+                &-second {
+                    background: url(img/Layer_90.jpg);
+                    min-height: 100%;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+
+    &-h3 {
+        padding: 18px 0 40px;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 36px;
+        text-transform: uppercase;
+    }
+
+    &-p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    &-date,
+    &-cat {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    &-date:after {
+        content: ' | ';
+    }
+}
+
+.blog {
+    &-title {
+        padding-top: 90px;
+        padding-bottom: 39px;
+    }
+
+    &-h2 {
+        background: url(img/B.png) no-repeat center;
+        text-align: center;
+    }
+
+    &-h4 {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 37px;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    &-articles {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 76px;
+        padding-bottom: 80px;
+    }
+
+    &-art {
+        width: 240px;
+        text-align: center;
+
+
+        &-h3 {
+            color: @color-blue;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 36px;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            margin: 40px 0 26px;
+
+        }
+
+        &-img {
+            max-width: 100%;
+        }
+
+        &-p {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+
+    }
+}
+
+.infos {
+    background-color: @color-blue;
+    
+    &-container{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    
+    &-art{
+        display: flex;
+        width: 45%;
+        align-items: flex-start;
+    }
+    &-p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        padding-left: 34px;
+    }
 }
 
 .feedback {
@@ -266,7 +416,7 @@ header {
 
     &-h2 {
         /* Заглушка */
-        background: url(img/C.png) no-repeat center;
+        background: url(img/B.png) no-repeat center;
         text-align: center;
     }
 
