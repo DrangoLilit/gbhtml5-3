@@ -482,3 +482,17 @@ footer {
   background-color: #222222;
   height: 120px;
 }
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.footer-p {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.26px;
+}
