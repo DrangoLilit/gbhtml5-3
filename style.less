@@ -342,7 +342,6 @@ header {
         font-weight: 400;
         line-height: 37px;
         text-align: center;
-        margin-top: 40px;
     }
 
     &-articles {
@@ -384,19 +383,20 @@ header {
 
 .infos {
     background-color: @color-blue;
-    
-    &-container{
+
+    &-container {
         display: flex;
         justify-content: space-between;
         padding-top: 120px;
         padding-bottom: 120px;
     }
-    
-    &-art{
+
+    &-art {
         display: flex;
         width: 45%;
         align-items: flex-start;
     }
+
     &-p {
         font-size: 15px;
         font-weight: 400;
@@ -405,9 +405,65 @@ header {
     }
 }
 
+.prof {
+    background: url(img/Layer_87.jpg) no-repeat fixed;
+    background-size: cover;
+
+    &-cont {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-bl {
+        width: 50%
+    }
+
+    &-h3 {
+        font-size: 25px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    &-p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
+    &-skill {
+        background: @color-blue;
+        margin-top: 24px;
+
+        &-span {
+            font-size: 15px;
+            font-weight: 500;
+            text-transform: uppercase;
+            line-height: 30px;
+            padding-left: 20px;
+        }
+    }
+
+    &-skill1 {
+        width: 80%;
+    }
+
+    &-skill2 {
+        width: 85%;
+    }
+
+    &-skill3 {
+        width: 90%;
+    }
+}
+
 .feedback {
 
-    background: url(img/Layer_97.jpg) no-repeat;
+    background: url(img/Layer_97.jpg) no-repeat fixed;
     background-size: cover;
 
     &-title {
