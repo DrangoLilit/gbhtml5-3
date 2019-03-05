@@ -362,6 +362,65 @@ header {
 .prof-skill3 {
   width: 90%;
 }
+.team-title {
+  padding-top: 90px;
+  padding-bottom: 39px;
+}
+.team-h2 {
+  background: url(img/T.png) no-repeat center;
+  text-align: center;
+}
+.team-h4 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 37px;
+  text-align: center;
+}
+.team-block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+  margin-bottom: 100px;
+}
+.team-person {
+  position: relative;
+  width: 240px;
+  height: 400px;
+}
+.team-person-info {
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+  background: #ffffff;
+  width: 200px;
+  text-align: center;
+}
+.team-person-name {
+  color: #11749e;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+.team-person-status {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.team-person1 {
+  background: url(img/Layer_81.jpg);
+}
+.team-person2 {
+  background: url(img/Layer_82.jpg);
+}
+.team-person3 {
+  background: url(img/Layer_93.jpg);
+}
+.team-person4 {
+  background: url(img/Layer_94.jpg);
+}
 .feedback {
   background: url(img/Layer_97.jpg) no-repeat fixed;
   background-size: cover;
