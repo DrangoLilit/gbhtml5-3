@@ -602,6 +602,10 @@ header {
 .map {
     max-height: 332px;
     overflow: hidden;
+    filter: invert(100%) grayscale(80%);
+    /* Firefox 3.5+ */
+    -webkit-filter: invert(100%) grayscale(80%);
+    /* Chrome 19+ & Safari 6+ */
 }
 
 footer {
