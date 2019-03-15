@@ -23,8 +23,11 @@
   font-style: normal;
   font-weight: 400;
 }
-body {
+body, html {
   height: 100%;
+}
+body {
+
   font-family: Gotham;
 }
 * {
@@ -477,9 +480,9 @@ header {
 .map {
   max-height: 332px;
   overflow: hidden;
-  filter: invert(100%) grayscale(80%);
+  filter: invert(100%) grayscale(75%) hue-rotate(190deg);
   /* Firefox 3.5+ */
-  -webkit-filter: invert(100%) grayscale(80%);
+  -webkit-filter: invert(100%) grayscale(75%) hue-rotate(190deg);
   /* Chrome 19+ & Safari 6+ */
 }
 footer {
